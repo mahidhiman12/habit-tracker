@@ -1,0 +1,339 @@
+.habit-tracker {
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.habit-tracker h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #6200ea;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.habit-list {
+  margin-top: 20px;
+}
+
+.habit-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.habit-item h3 {
+  margin: 0;
+  color: #333;
+  font-size: 22px;
+}
+
+.habit-item p {
+  color: #555;
+  font-size: 16px;
+}
+
+.streak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.streak span {
+  font-size: 16px;
+  color: #6200ea;
+}
+
+.streak button {
+  background-color: #6200ea;
+  color: white;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.streak button:hover {
+  background-color: #3700b3;
+}
+
+.view-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.view-selector button {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-selector button:hover {
+  background-color: #3700b3;
+}
+
+.view-selector button:focus {
+  outline: none;
+}
+
+/* Calendar */
+.calendar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* General Styles for Calendar */
+.styled-calendar {
+  border: none;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Calendar Header */
+.react-calendar__navigation {
+  background-color: #6200ea;
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Weekdays */
+.react-calendar__month-view__weekdays {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+}
+
+/* Day cells */
+.react-calendar__month-view__days__day {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__month-view__days__day:hover {
+  background-color: #6200ea;
+  color: white;
+  cursor: pointer;
+}
+
+.react-calendar__month-view__days__day.react-calendar__tile--active {
+  background-color: #3700b3;
+  color: white;
+}
+
+/* Modal Styles */
+.calendar-modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 450px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-modal button {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calendar-modal button:hover {
+  background-color: #3700b3;
+}
+
+/* Calendar Button */
+.calendar-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.calendar-button button {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calendar-button button:hover {
+  background-color: #3700b3;
+}
+
+
+
+/* Habit Tracker Styles */
+.habit-tracker {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Habit Dashboard */
+.habit-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+/* Habit Card Styles */
+.habit-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  width: calc(50% - 20px); /* 2 cards per row */
+  min-width: 260px;
+  transition: transform 0.2s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.habit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.habit-card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.habit-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Streak Section */
+.streak {
+  margin-top: 10px;
+}
+
+.streak button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.streak button:hover {
+  background-color: #45a049;
+}
+
+/* Completed Dates Section */
+.completed-dates ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.completed-dates li {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .habit-card {
+    width: 100%; /* Stack cards in a single column on smaller screens */
+  }
+}
+
+
+/* Habit Card Styles */
+.habit-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  width: calc(33.33% - 20px); /* 3 cards per row */
+  min-width: 260px;
+  transition: transform 0.2s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.habit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 1024px) {
+  .habit-card {
+    width: calc(50% - 20px); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .habit-card {
+    width: 100%; /* 1 card per row on small screens */
+  }
+}
+
+
+
+
+

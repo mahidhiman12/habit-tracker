@@ -1,0 +1,222 @@
+/* General Styles */
+.board-page {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Create Board Section */
+.create-board {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.create-board input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-board button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-board button:hover {
+  background-color: #45a049;
+}
+
+/* Board List Styles */
+.boards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.board-item {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.board-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.board-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.board-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Task Section Styles */
+.task-section {
+  margin-top: 30px;
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List Styles */
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-item span {
+  flex: 1;
+}
+
+.task-item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #c0392b;
+}
+
+/* Completed Task Styles */
+.completed {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+/* Personal Goals and Work Projects Section */
+.section-title {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.section-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.section-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.section-card button {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.section-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Custom Styling for Personal Goals and Work Projects */
+.personal-goals, .work-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.personal-goals .section-card, .work-projects .section-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.personal-goals .section-card button, .work-projects .section-card button {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+/* Add a border to the Task Cards for better clarity */
+.task-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.task-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.task-card p {
+  font-size: 14px;
+  color: #555;
+}
